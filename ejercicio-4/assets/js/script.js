@@ -10,11 +10,11 @@
     }
       content +=
           "_".repeat(height - 1) +
-          `${ornament}` +
+          `#` +
           "_".repeat(height - 1) +
           "\n" +
           "_".repeat(height - 1) +
-          `${ornament}` +
+          `#` +
           "_".repeat(height - 1);
     return content;
   };

@@ -1,36 +1,10 @@
 {
     /*Recibo un array de objetos botas, debo de ordenarlos por 
     tamaño y comprobar si existe dos botas del mismo tamaño y 
-    diferente pie, en ese caso, devuelve solo el tamaño en un 
-    array unidimensional*/
+    diferente pie, en ese caso, devuelve solo el tamaño del zapato 
+    en un array unidimensional*/
     function organizeShoes(shoes) {
-        //  Ordena el array y guarda el resultado en un array nuevo
-        const shoesSorted = shoes.sort((a, b) => a.size - b.size);
-        let organize = [];
-        shoesSorted.forEach(element => {
-            organize.push([element]);
-            while (organize[0].size === element.size) {
-                organize.push(element);
-            }
-        });
-        /*let newArray = shoesSorted.filter((a, b) => a.size === b.size);
-        console.log(newArray);
-        */
-        /*
-        shoesSorted.forEach((item, index) => {
-            if (index + 1 !== shoes.length) {
-                if (item.size === shoesSorted[index + 1].size && item.type !== shoesSorted[index + 1].type) {
-                    organize.push(item.size);
-                }
-            }
-        });
-        */
-        shoesSorted.forEach()
-        /*
         
-        
-        */
-        return organize;
     }
 
     const shoes = [
